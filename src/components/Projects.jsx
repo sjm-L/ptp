@@ -1,12 +1,36 @@
+import React, { useState } from "react";
+import "./Projects.css";
+
 const Projects = () => {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
+  const projectList = [
+    "React Portfolio",
+    "Node.js API",
+    "Unity Game",
+    "AI Chatbot",
+  ];
+
   return (
-    <section
-      id="projects"
-      className="min-h-screen bg-background text-secondary p-10"
-    >
-      <h2 className="text-3xl font-bold text-primary mb-4">Projects</h2>
-      <p>포트폴리오에 넣을 프로젝트들을 나열</p>
+    <section id="projects" className="projects-section">
+      <div
+        className="project-card-container"
+        onMouseLeave={() => setHoveredIndex(null)}
+      >
+        {projectList.map((name, index) => (
+          <div
+            key={index}
+            className={`project-card ${
+              hoveredIndex !== null && hoveredIndex !== index ? "dimmed" : ""
+            }`}
+            onMouseEnter={() => setHoveredIndex(index)}
+          >
+            {name}
+          </div>
+        ))}
+      </div>
     </section>
   );
 };
+
 export default Projects;
