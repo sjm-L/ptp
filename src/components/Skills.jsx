@@ -8,7 +8,6 @@ const Skills = () => {
       <ul className="list-disc list-inside">
         <li>JavaScript</li>
         <li>React</li>
-        <li>TailwindCSS</li>
       </ul>
     </section>
   );

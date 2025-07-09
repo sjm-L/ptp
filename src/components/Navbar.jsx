@@ -1,6 +1,6 @@
-// src/components/Navbar.jsx
+// src/components/css/Navbar.jsx
 
-import "./Navbar.css";
+import "./css/Navbar.css";
 
 const Navbar = () => {
   return (

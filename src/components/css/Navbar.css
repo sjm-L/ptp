@@ -1,6 +1,5 @@
 /* src/components/Navbar.css */
 
-/* 전체 nav 고정 및 기본 스타일 */
 .navbar {
   position: fixed;
   top: 0;
@@ -12,27 +11,25 @@
   border-bottom: 1px solid #b0ab97;
 }
 
-/* 메뉴 리스트 정렬 */
 .nav-links {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   list-style: none;
-  gap: 7rem; /* 각 메뉴 간 간격 */
+  gap: 4rem;
   margin: 0;
   padding: 0;
 }
 
-/* 메뉴 항목 스타일 */
 .nav-links a {
   text-decoration: none;
-  color: #f9f3e9;
+  color: rgba(249, 243, 233, 0.5);
   font-weight: bold;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, opacity 0.3s ease;
 }
 
-/* hover 시 효과 */
 .nav-links a:hover {
-  color: #b0ab97;
+  color: #f9f3e9;
+  opacity: 1;
 }
