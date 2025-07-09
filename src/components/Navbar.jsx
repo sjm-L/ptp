@@ -6,7 +6,7 @@ import "./css/Navbar.css";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
-  const sections = ["Home", "About", "Skills", "Projects"];
+  const sections = ["Home", "About", , "Projects"];
 
   return (
     <nav className="navbar">
