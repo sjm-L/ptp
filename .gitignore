@@ -30,3 +30,11 @@ dist/
 *.log
 *.env
 node_modules/
+# SSH private key
+*.pem
+*.ppk
+*.key
+*.crt
+*.der
+id_ed25519
+id_rsa
