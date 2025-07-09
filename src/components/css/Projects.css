@@ -28,6 +28,7 @@
   border-radius: 10px;
   transition: transform 0.3s ease, background-color 0.3s ease;
   cursor: pointer;
+  border: 2px solid rgba(249, 243, 233, 0.6); /* 밝은 회색 테두리 */
 }
 
 .project-horizontal-card:hover {
