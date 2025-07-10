@@ -1,0 +1,94 @@
+.projects-section {
+  min-height: 100vh;
+  background-color: #111;
+  color: #eee;
+  padding: 60px 40px;
+}
+
+.projects-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgba(249, 243, 233, 0.8);
+  margin-bottom: 30px;
+}
+
+/* 카드 전체 */
+.project-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* 개별 프로젝트 카드 */
+.project-horizontal-card {
+  display: flex;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 20px 30px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  border: 2px solid rgba(249, 243, 233, 0.6); /* 밝은 회색 테두리 */
+}
+
+.project-horizontal-card:hover {
+  transform: translateY(-5px);
+  background-color: #222;
+}
+
+/* 왼쪽 이미지 */
+.project-image {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 30px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 오른쪽 텍스트 */
+.project-text {
+  flex: 1;
+}
+
+.project-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* 반응형: 모바일 화면에서는 세로 정렬로 전환 */
+@media screen and (max-width: 768px) {
+  .project-horizontal-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 0 15px 0;
+  }
+
+  .project-text {
+    text-align: center;
+  }
+
+  .project-title {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+  }
+
+  .project-description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}

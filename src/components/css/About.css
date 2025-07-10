@@ -1,0 +1,88 @@
+/* 전체 섹션 스타일 */
+#about {
+  min-height: 100vh;
+  background-color: #111;
+  color: #eee;
+  padding: 60px 40px;
+}
+
+/* 내부 컨테이너: 데스크탑은 가로 2분할, 모바일은 세로 정렬 */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 200px;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+/* 왼쪽 영역: 사진 + 개인정보 */
+.about-left {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px #eee;
+}
+
+.person-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.person-info li {
+  margin-bottom: 8px;
+}
+
+/* 오른쪽 영역: 학력 / 프로젝트 / 스킬 */
+.about-right {
+  flex: 2 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-section h3 {
+  font-size: 2.3rem;
+  color: #f9f3e9;
+  margin-bottom: 10px;
+}
+
+.about-section p,
+.about-section ul {
+  font-size: 1.5rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* .about-section li {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  list-style: disc;
+  margin-left: 20px;
+} */
+
+/* 모바일 반응형 */
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100%;
+  }
+}
