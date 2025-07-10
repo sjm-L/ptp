@@ -18,13 +18,13 @@ const About = () => {
               <hr></hr>
             </div>
             <li>
-              <strong>이름:</strong> 홍길동
+              <strong>이름:</strong> 손정민
             </li>
             <li>
-              <strong>이메일:</strong> hong@example.com
+              <strong>이메일:</strong> shower1300@gmail.com
             </li>
             <li>
-              <strong>위치:</strong> 서울, 대한민국
+              <strong>위치:</strong> 대전, 대한민국
             </li>
             <li>
               <strong>연락처:</strong> 010‑1234‑5678
