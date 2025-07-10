@@ -86,3 +86,25 @@
     width: 100%;
   }
 }
+
+.skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  text-align: center;
+}
+
+.skill-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}

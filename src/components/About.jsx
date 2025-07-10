@@ -58,7 +58,73 @@ const About = () => {
           <div className="about-section">
             <h3>Skills</h3>
             <hr></hr>
-            <p>JavaScript, React, Node.js, Unity, C#, Tailwind, CSS, HTML 등</p>
+
+            <div className="skill-icons">
+              <div className="skill-item">
+                <img
+                  src="/icon/javascript-original.svg"
+                  alt="JavaScript"
+                  className="skill-icon"
+                />
+                <span>JavaScript</span>
+              </div>
+              <div className="skill-item">
+                <img
+                  src="/icon/typescript-original.svg"
+                  alt="TypeScript"
+                  className="skill-icon"
+                />
+                <span>TypeScript</span>
+              </div>
+              <div className="skill-item">
+                <img
+                  src="/icon/react-original.svg"
+                  alt="React"
+                  className="skill-icon"
+                />
+                <span>React</span>
+              </div>
+              <div className="skill-item">
+                <img
+                  src="/icon/nodejs-original.svg"
+                  alt="Node.js"
+                  className="skill-icon"
+                />
+                <span>Node.js</span>
+              </div>
+              <div className="skill-item">
+                <img
+                  src="/icon/unity-original.svg"
+                  alt="Unity"
+                  className="skill-icon"
+                />
+                <span>Unity</span>
+              </div>
+              <div className="skill-item">
+                <img
+                  src="/icon/html5-original.svg"
+                  alt="HTML"
+                  className="skill-icon"
+                />
+                <span>HTML</span>
+              </div>
+              <div className="skill-item">
+                <img
+                  src="/icon/css3-original.svg"
+                  alt="CSS"
+                  className="skill-icon"
+                />
+                <span>CSS</span>
+              </div>
+              <div className="skill-item">
+                <img
+                  src="/icon/csharp-original.svg"
+                  alt="C#"
+                  className="skill-icon"
+                />
+                <span>C#</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
